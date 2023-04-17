@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <!--AUTHOR MUNIR ALI-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+    <!--laden der Schriften-->
+		<style>
+			@font-face { 
+			font-family: Ethnocentric;
+			src: url('resources/font/ETHNOCENTRIC.TTF');
+			}
+		</style>
+    <!--Stylesheets werden nach mediaqueries geladen, Javascript wird geladen-->
+    <link href="resources/CSS/Style.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen and (min-width: 1160px)" href="resources/CSS/index_D.css" />
+		<link rel="stylesheet" media="screen and (min-width: 550px) and (max-width: 1160px)" href="resources/CSS/index_T.css" />
+		<link rel="stylesheet" media="screen and (max-width: 550px)" href="resources/CSS/index_M.css" />
+    
+    <script src="resources/javascript/navigationF.js" ></script>
+   
+      </head>
+
+      <body>
+        <header>
+          <!--Navigationsleiste wird erstellt-->
+          <nav class="mainnav">
+            <!--Logo mit Link zur Hauptseite wird platziert-->
+            <a href="Main.html">
+              <figure class="logo">
+                <img src="resources/pictures/Logo.svg" alt="Logo" width="300" height="75">
+              </figure>
+            </a>
+            <div id="wrapper">
+              <!--Menügrafik für Mobile Ansicht-->
+              <img src="resources/pictures/Menu.svg" alt="Menu" width="50" height="50">
+            <!--Liste mit den Navigationselementen-->
+              <ul id="changeontap">
+                <li>
+                  <a href="Neu.html">
+                    Neu
+                  </a>
+                </li>
+                <li>
+                  <a href="Sale.html">
+                    Sale
+                  </a>
+                </li>
+                <li>
+                  <a href="Boards.html">
+                    Boards
+                  </a>
+                </li>
+                <li>
+                  <a href="Ausrüstung.html">
+                    Ausrüstung
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Unsichtbarer Knopf zum ausklappen des Menüs im Mobilen Modus-->
+            <div id="button"></div>
+            <!--Knopf zum aus/einklappen der Navigation-->
+          </nav>
+          <!--Balken für Navigationsleiste-->
+          <div class="kantenwrapper">
+            <div id="kante1">
+            </div>
+          </div>
+          <div class="kantenwrapper">
+            <div id="kante2">
+            </div>
+          </div>
+          <div class="kantenwrapper">
+            <div id="kante3">
+            </div>
+          </div>
+          <!--großes Hauptbild-->
+          <figure class="mainpic">
+            <img class="mainpic" src="resources/pictures/FormularPic1.png" alt="Illumina">
+          </figure>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Formular-->
+        <form  class="form" action="Einkauf.html" >
+
+          <!--Erster FlexContainer für die erste Tabellen "Zeile"-->
+        <div class="flex">
+
+          <div class="box0 box">
+            <label> Anrede:</label>
+            <input list="anrd" id="anrede" name="anrede">
+            <datalist name="anrede" id="anrd">
+              <option label="Ehrenmann">Ehrenmann</option>
+              <option label="Ehrenfrau">Ehrenfrau</option>
+              <option label="Ehre Divers">Ehren Divers</option>
+              <option label="Eure Hochwohlgeborenheit">Eure Hochwohlgeborenheit</option>
+              <option label="Eure Lordschaft">Eure Lordschaft</option>
+            </datalist>
+
+          </div>
+
+          <div class="box" id="box1">
+            <label> Vorname*:</label>
+            <input type="text" name="vorname" required id="vorname">
+          </div>
+
+          <div class="box" id="box2">
+            <label> Name*:</label>
+            <input type="text" name="name" required id="name">
+          </div>
+
+        </div>
+        
+
+
+        <!--Zweieter FlexContainer für die zweite Tabellen "Zeile"-->
+        <div class="flex">
+          <div class="box" id="box3">
+            <label> Straße*:</label>
+            <input type="text" name="straße" required id="straße">
+          </div>
+
+          <div class="box" id="box4">
+            <label> Hausnummer*:</label>
+            <input type="text" name="hausnummer" required id="hausnummer">
+          </div>
+        </div>    
+
+        <!--Dritter FlexContainer für die dritte Tabellen "Zeile"-->
+        <div class="flex">
+
+          <div class="box" id="box5">
+            <label> Postleitzahl*:</label>
+            <input type="text" name="postleitzahl" required id="postleitzahl">
+          </div>
+      
+          <div class="box" id="box6">
+            <label> Stadt*:</label>
+            <input type="text" name="stadt" required id="stadt">
+          </div>
+
+          
+
+          <div class="box" id="box7">
+            <label> Land*:</label>
+            <input type="text" name="land" required id="land" value=Deutschland>
+          </div>
+
+        </div>
+
+
+       
+        </div>
+
+        <!--Vierter FlexContainer für die vierte Tabellen "Zeile"-->
+        <div class="flex">
+          <div class=" box"  id="box8">
+            <label> Email*:</label>
+            <input type="email" name="email" required id="email">
+          </div>
+
+          <div class=" box" id="box9">
+            <label> Telefon:</label>
+            <input type="text" name="tel" id="tel" >
+          </div>
+
+        </div>
+
+      
+
+        <!--Agb Checkbox-->
+        <div  id="c">
+          <input type="checkbox" id="c0" name="agb" required  >
+         <label for="c0">Einverständniserklärung&nbsp;</label>
+         <label for="c0" id="lab">mit den AGBs</label>
+        
+       </div>
+
+       <!--KaufButton-->
+      <div class="container">
+        
+        <button id="kaufen" value="kaufen" type="submit"> 
+           <img src="resources/pictures/splash10.svg" id="img0">  <p id="p0">Kaufen</p> 
+        </button>
+        
+       </div>
+
+    </form>
+
+      
+
+
+
+
+
+
+    <footer>
+			<!--Impressum-->
+			<h1>
+				Impressum
+			</h1>
+			<p>
+				Da wir keinen eigenen Standort haben ist hier als Platzhalter die Adresse der Hochschule gegeben.
+			</p>
+			<!--Einbettung der Googlemaps Seite der Hochschule-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8322.504404996705!2d8.360260749203276!3d51.67273641611387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9fa6432b2e62a8a!2sHochschule%20Hamm-Lippstadt%20-%20Campus%20Lippstadt!5e0!3m2!1sde!2sde!4v1610985187321!5m2!1sde!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			</iframe>
+			<!--Liste mit Socialmedia Links-->
+			<nav>
+				<ul>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/FacebookLogo.png" alt="facebook" width="40" height="40">
+						</figure>
+						<a href="https://de-de.facebook.com/Hochschule.Hamm.Lippstadt/">
+							Facebook
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/TwitterLogo.png" alt="Twitter" width="40" height="40">
+						</figure>
+						<a href="https://twitter.com/hshammlippstadt?lang=de">
+							Twitter
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/YoutubeLogo.png" alt="Youtube" width="40" height="40">
+						</figure>
+						<a href="https://www.youtube.com/user/hshammlippstadt">
+							Youtube
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/InstagramLogo.png" alt="Instagram" width="40" height="40">
+						</figure>
+						<a href="https://www.instagram.com/hshammlippstadt/?hl=de">
+							Instagram
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Adresse-->
+			<p id="adress">
+				Dr.-Arnold-Hueck-Straße 3<br> 
+				59557<br>
+				Lippstadt
+			</p>
+		</footer>
+      </body>
+
+      
+</html>

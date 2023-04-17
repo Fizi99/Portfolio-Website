@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Illumina</title>
+  <style>
+		@font-face { 
+		font-family: Ethnocentric;
+		src: url('resources/font/ETHNOCENTRIC.TTF');
+	}
+	</style>
+<!--Stylesheets werden nach mediaqueries geladen, Javascript wird geladen-->
+<link rel="stylesheet" media="screen and (min-width: 1160px)" href="resources/CSS/Artikel_D.css" />
+<link rel="stylesheet" media="screen and (min-width: 550px) and (max-width: 1160px)" href="resources/CSS/Artikel_T.css" />
+<link rel="stylesheet" media="screen and (max-width: 550px)" href="resources/CSS/Artikel_M.css" />
+<script src="resources/javascript/navigationArtikel.js"></script>
+ </head>
+ <body>
+<header>
+	<!--Navigationsleiste wird erstellt-->
+	<nav class="mainnav">
+		<!--Logo mit Link zur Hauptseite wird platziert-->
+		<a href="Main.html">
+			<figure class="logo">
+				<img src="resources/pictures/Logo.svg" alt="Logo" width="300" height="75">
+			</figure>
+		</a>
+		<div id="wrapper">
+			<!--Menügrafik für Mobile Ansicht-->
+			<img src="resources/pictures/Menu.svg" alt="Menu" width="50" height="50">
+		<!--Liste mit den Navigationselementen-->
+			<ul id="changeontap">
+				<li>
+					<a href="Neu.html">
+						Neu
+					</a>
+				</li>
+				<li>
+					<a href="Sale.html">
+						Sale
+					</a>
+				</li>
+				<li>
+					<a href="Boards.html">
+						Boards
+					</a>
+				</li>
+				<li>
+					<a href="Ausrüstung.html">
+						Ausrüstung
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--Unsichtbarer Knopf zum ausklappen des Menüs im Mobilen Modus-->
+		<div id="button"></div>
+		<!--Knopf zum aus/einklappen der Navigation-->
+	</nav>
+	<!--Balken für Navigationsleiste-->
+	<div class="kantenwrapper">
+		<div id="kante1">
+		</div>
+	</div>
+	<div class="kantenwrapper">
+		<div id="kante2">
+		</div>
+	</div>
+	<div class="kantenwrapper">
+		<div id="kante3">
+		</div>
+	</div>
+</header>
+
+	<!-- Der Main Content als Flexbox bestehend aus 3 Boxen"-->
+	<main>
+	<div class ="box">
+		<!-- Die erste Box besteht aus Überschrift, einer Beschreibung und einem Button"-->
+		<div class="firstBox">
+			<h1 id="gegenstand"> Blue Dragon</h1>
+			<p>	Das perfekte Cruiser Board für Neueinsteiger und Veteranen!<br>
+				Durch das tiefergelegte Deck ist jeder Push wie ein Spaziergang auf Wolken.<br>
+				Das vorinstallierte RGB-Kit setzt deinem Entdeckungsdrang auch bei Nacht keine Grenzen!
+				Ob im Skate Park, auf den Hills oder in der City - mit diesem Board erfüllst du dir alle deine Träume.</p>
+			<ul id="Betrag">
+				<li id="Preis">249.99 €</li>
+				<li id="Availability">Auf Lager</li>
+				<li id="Maße">L: 36.4" | W: 5" | WB: 24.9"</li>
+			</ul>
+			<button type="button" id="kaufButton" value="Kaufseite" onclick="location.href='Formular.html';">JETZT KAUFEN</button>
+
+		</div>
+	<!-- Die zweite Box umfasst die beiden Grafiken des Boards und des Kleckses-->
+		<div class="secondBox">
+			<img src="resources/pictures/splash3.svg" alt="Splash image" width="580" height="520" id="splashImage">
+			<img src="resources/pictures/blueDragon.png" alt="Longboard Image1" width="400" height="550" id="lb1Image">
+		</div>
+	<!-- Die dritte Box umfasst eine Überschrift und eine unlisted Liste-->
+		<div class="thirdBox">
+			<h1> Einzelheiten </h1>
+			<ul id="Einzelheiten">
+				<li>Custom Blue Dragon Deck</li>
+				<li>RGB-Wires (Icy_Blue)</li>
+				<li>HSHL 70mm Beton Weels</li>
+				<li>Fitzenreiter Trucks 180mm</li>
+			</ul>
+		</div>
+	</div>
+	</main>
+ </body>

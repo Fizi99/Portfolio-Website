@@ -1,0 +1,309 @@
+/*AUTHOR ANTON FRIEDRICH FITZENREITER*/
+
+/*Hintergrundfarbe*/
+
+html {
+    font-family: Arial;
+    font-size: 12px;
+    background: radial-gradient(#13293d, #000000 );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+/*header*/
+
+header {
+    position: relative;
+    overflow-y: visible;
+}
+/*Navigation wird positioniert*/
+nav.mainnav {
+    background-color: #FFFF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position:relative;
+    z-index: 2;
+}
+/*Menü für Mobile Ansicht wird positioniert*/
+#wrapper{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    padding-left: 0px;
+    right: 15px;
+    background-color: #FFFF00;
+}
+/*Unsichtbarer Knopf zum klappen der Navigation*/
+#button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    padding-left: 0px;
+    right: 15px;
+    z-index: 2;
+    pointer-events: all;
+}
+#wrapper img{
+    z-index: 1;
+}
+/*Ausfahren der Navigation bei hover über Menü*/
+nav.mainnav ul{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    color: #000000;
+    padding-right: 70px;
+    text-align: right;
+    right: -15px;
+    top: -17px;
+    background-color: #FFFF00;
+}
+nav.mainnav li{
+    margin: 1em;
+}
+nav.mainnav li:hover{
+    text-decoration: underline;
+}
+/*Logopositionierung*/
+figure.logo{
+    top: 0px;
+    margin: 0px;
+    margin-left: 8px;
+    background-color: #FFFF00;
+}
+figure.logo img{
+    width: 150px;
+    z-index: 1;
+    position: relative;
+}
+/*Kanten werden transformiert*/
+header div.kantenwrapper {
+    background-color: #FFFF00;
+    position: relative;
+    overflow-x: clip;
+    max-width: 100%;
+}
+header #kante1 {
+    position: absolute;
+    transform: rotate(5deg);
+    width: 600px;
+    height: 100px;
+    top: -72px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+header #kante2 {
+    position: absolute;
+    transform: rotate(-10deg);
+    width: 600px;
+    height: 100px;
+    top: -97.5px;
+    left: 581px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+header #kante3 {
+    position: absolute;
+    transform: rotate(3deg);
+    width: 1500px;
+    height: 100px;
+    left: 879px;
+    top: -57px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+/*Hauptbild wird positioniert*/
+figure.mainpic {
+    padding: 0;
+    margin: 0 auto;
+}
+img.mainpic {
+    top: 50px;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/*main*/
+
+/*Kategorieüberschrift wird positioniert*/
+main article.article1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    top: -150px;
+    left: 5%;
+}
+
+main article.article1 figure {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+main article.article1 img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+main article.article1 h1 {
+    font-family: Ethnocentric;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+}
+/*Container für Produktliste wird positioniert*/
+main div.productContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -150px;
+    height: calc(100% - 150px);
+}
+/*Produktliste im Container wird positioniert*/
+main div ul {
+    width: 100%;
+    position: relative;
+    display: block;
+    list-style-type: none;
+}
+
+main div li {
+    width: 80%;
+    margin: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*Produktschaltflächen werden positioniert*/
+main div li a {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: #FFFF00;
+    border-width: 2px;
+}
+/*Hovereffekt für Produktschaltfläche*/
+main div li a:hover {
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: #FFFF00;
+    border-width: 5px;
+}
+/*Grafik in Produktschaltfläche wird positioniert*/
+main div li figure {
+    width: calc(100% - 80px);
+    height: auto;
+}
+
+main div li figure img{
+    width: 100%;
+    height: auto;
+}
+/*Text in Produktschaltfläche wird positioniert Text und Preis soll nun Untereinander dargestellt werden*/
+main div li div.textwrapper{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
+main div li h1 {
+    color: #FFFF00;
+    font-family: Ethnocentric;
+    font-size: 6vw;
+    text-align: center;
+}
+
+main div li p{
+    color: #FFFF00;
+    font-size: 3vw;
+    text-align: center;
+}
+
+main div li p.price{
+    color: #FFFF00;
+    font-size: 6vw;
+    font-family: Ethnocentric;
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Impressum wird positioniert*/
+footer h1 {
+    position: relative;
+    font-family: Ethnocentric;
+    color: #FFFF00;
+    text-align: center;
+}
+footer p {
+    position: relative;
+    color: #FFFF00;
+    text-align: center;
+}
+/*Karte wird positioniert*/
+footer iframe {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    width: 60%;
+    height: 250px;  
+}
+/*Socialmedia Links werden positioniert*/
+footer nav {
+    position: relative;
+    width: 100%;
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+}
+footer li {
+    position: relative;
+    text-align: center;
+}
+footer li a{
+    color: #FFFF00;
+    font-size: 12px;
+}
+footer li figure {
+    margin: 0px;
+}
+footer img.icon {
+    height: 30px;
+    width: 30px;
+}

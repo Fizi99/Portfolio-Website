@@ -1,0 +1,87 @@
+[{
+    "id": "Snake3D",
+    "title": "Snake 3D",
+    "text": "Dieses Projekt habe ich zur Übung von Unity umgesetzt. Es handelt sich um ein einfaches Snake-Spiel mit einem Twist! Um dem Spiel eine neue \"Tiefe\" zu geben, kann ein Feld in die dritte Dimension gesprungen werden. Dies ermöglicht einen ganz neuen Spielfluss, da über die eigene Schlange gesprungen werden kann, um die Lebenszeit und somit auch den Highscore zu erhöhen.<br><br>Werkzeuge: Unity",
+    "media": 1,
+    "images": [ {"alt": "Snake_Title", "path": "./assets/images/projects/Snake3D/Snake_Title.jpg"},
+                {"alt": "Snake_Gameplay1", "path": "./assets/images/projects/Snake3D/Snake_Gameplay1.jpg"},
+                {"alt": "Snake_Gameplay2", "path": "./assets/images/projects/Snake3D/Snake_Gameplay2.jpg"},
+                {"alt": "Snake_GameOver", "path": "./assets/images/projects/Snake3D/Snake_GameOver.jpg"}
+    ],
+    "link": 1,
+    "href": "https://fitzi99.itch.io/3d-snake",
+    "linkText": "Probier es hier aus!",
+    "previewImage": "./assets/images/projects/Snake3D/Snake_Preview.jpg",
+    "_3DText": "./assets/models/Snake_Text.glb",
+    "model": "./assets/models/Island_V1.glb"
+},
+{
+    "id": "Murmelbahn",
+    "title": "Murmelbahn",
+    "text": "Hierbei handelt es sich um eine Murmelbahn-Simulation, die als Softwareprojekt in einem Modellbildungsmodul entstand. Mit der Software kann die Interaktion von mehreren Murmeln und Plattformen bei verschiedenen Wind- und Gravitationseinstellungen beobachtet werden. Eine ausfürbare .jar Datei kann über den unteren Link heruntergeladen werden.<br><br>Werkzeuge: Java<br>Teammitglied: Janis Karl",
+    "media": 2,
+    "video": "./assets/images/projects/Murmelbahn/Murmelbahn_Video.mp4",
+    "link": 1,
+    "href": "https://drive.google.com/file/d/1_1isqD_4SAWkYD8Lni52EGPoJ__LaPGd/view?usp=sharing",
+    "linkText": "Hier herunterladen!",
+    "previewImage": "./assets/images/projects/Murmelbahn/Murmelbahn_Preview.jpg",
+    "_3DText": "./assets/models/Murmelbahn_Text.glb",
+    "model": "./assets/models/Island_V4.glb"
+},
+{
+    "id": "NachlassWF",
+    "title": "Nachlassseite Wilfried Fitzenreiter",
+    "text": "Diese Website habe ich als Nachlass Website für den Bildhauer Wilfried Fitzenreiter geschrieben. Auf ihr können Informationen über sein Leben, seine Werke und Publikationen gefunden werden.<br><br>Werkzeuge: html, css, javascript",
+    "media": 1,
+    "images": [ {"alt": "Nachlass_Vita", "path": "./assets/images/projects/NachlassWF/Nachlass_Vita.jpg"},
+                {"alt": "Nachlass_Publikation", "path": "./assets/images/projects/NachlassWF/Nachlass_Publikationen.jpg"}
+    ],
+    "link": 1,
+    "href": "https://www.wilfried-fitzenreiter.de",
+    "linkText": "Besuche die Seite!",
+    "previewImage": "./assets/images/projects/NachlassWF/Nachlass_Preview.jpg",
+    "_3DText": "./assets/models/Nachlass_Text.glb",
+    "model": "./assets/models/Island_V2.glb"
+},
+{
+    "id": "Illumina",
+    "title": "Illumina",
+    "text": "Diese Seite entstand aus einem Web Entwicklungsmodul als Webpräsenz für ein fiktives Skate Unternehmen. Mein Aufgabenbereich beinhaltete die Hauptseite und die Kategorieseiten.<br><br>Werkzeuge: html, css, javascript<br>Teammitglieder: Munir Ali, Janis Karl",
+    "media": 1,
+    "images": [ {"alt": "Illumina_Main1", "path": "./assets/images/projects/Illumina/Illumina_Main1.jpg"},
+                {"alt": "Illumina_Main2", "path": "./assets/images/projects/Illumina/Illumina_Main2.jpg"},
+                {"alt": "Illumina_Produkt", "path": "./assets/images/projects/Illumina/Illumina_Produkt.jpg"},
+                {"alt": "Illumina_Sale", "path": "./assets/images/projects/Illumina/Illumina_Sale.jpg"}
+    ],
+    "link": 1,
+    "href": "illumina/Main.html",
+    "linkText": "Besuche die Seite!",
+    "previewImage": "./assets/images/projects/Illumina/Illumina_Preview.jpg",
+    "_3DText": "./assets/models/Illumina_Text.glb",
+    "model": "./assets/models/Island_V3.glb"
+},
+{
+    "id": "Schmetterling",
+    "title": "Schmetterling",
+    "text": "Dieses Video ist in einem Visual Effects Modul entstanden. Als Aufgabe bekam man ein Video gestellt, in welchem man einen visuellen Effekt einbauen sollte. Der Schmetterling wurde in Blender modelliert, in Maya geriggt und animiert und das Video wurde in Nuke kompositioniert.<br><br>Werkzeuge: Blender, Maya, Nuke",
+    "media": 2,
+    "video": "./assets/images/projects/Schmetterling/Schmetterling_Video.mp4",
+    "previewImage": "./assets/images/projects/Schmetterling/Schmetterling_Preview.jpg",
+    "_3DText": "./assets/models/Schmetterling_Text.glb",
+    "model": "./assets/models/Island_V5.glb"
+},
+{
+    "id": "Soulfood",
+    "title": "Soulfood",
+    "text": "Soulfood ist die Demo für ein Action Rollenspiel, bei dem eine Restaurantbesitzerin die Welt bereist um Zutaten und neue Rezepte zu finden. Die Zutaten werden sich jedoch nicht so einfach ernten lassen! Ihr ständiger Begleiter \"Nugget\" hilft ihr, die Essensmonster zu bekämpfen.<br><br>Werkzeuge: Unity, Blender<br>Teammitglieder: Janis Karl, Munir Ali, Jun Yao Li, Sarah Moreno Valsera",
+    "media": 1,
+    "images": [ {"alt": "Soulfood_Gameplay1", "path": "./assets/images/projects/Soulfood/Soulfood_Gameplay1.jpg"},
+                {"alt": "Soulfood_Gameplay2", "path": "./assets/images/projects/Soulfood/Soulfood_Gameplay2.jpg"}
+    ],
+    "link": 1,
+    "href": "https://drive.google.com/file/d/12beK1Kzf8CZuLGTbNFiGmN3JMnB_H239/view?usp=sharing",
+    "linkText": "Hier herunterladen!",
+    "previewImage": "./assets/images/projects/Soulfood/Soulfood_Preview.jpg",
+    "_3DText": "./assets/models/Soulfood_Text.glb",
+    "model": "./assets/models/Island_V2.glb"
+}]

@@ -1,0 +1,229 @@
+/*AUTHOR JANIS KARL*/
+
+html{
+	
+	/* Die Main Farben Gelb und Grau werden hier definiert*/
+	--color-yellow: #ffff00; /* Main Elementfarbe Gelb */
+	--color-grey: #d6d6d6; /* Main Elementfarbe Gelb */
+
+	height: 100%;
+	/*Der Hintergrund ist ein radial Gradient*/
+	background: radial-gradient(circle, #13293d, #000000 ) , fixed;
+	background-size: cover;
+	background-repeat: repeat;
+	font-family: "Gadugi";
+	color: var(--color-grey);
+
+}
+
+body {
+	margin: 0px;
+	overflow-x: hidden;
+	margin-bottom: 20%;
+}
+
+/* Farbsetzung der wichtigsten Elemente*/
+.firstBox h1, .thirdBox h1{
+	color: var(--color-yellow);
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+main{
+	position: relative;
+}
+
+	/*Eingerückter Text*/
+p{
+	margin-left: 2em;
+	max-width: 30em;
+}
+
+/*Ziel ist das Entfernen der normalen Bullet Points und Hinzufügen von gelben, viereckigen*/
+
+ul{
+	list-style: none;
+}
+
+ul#Einzelheiten li::before{
+
+	content: "\25A0";  /*Css Code für schwarzes Viereck */
+	font-size: 0.6em;
+	color: var(--color-yellow);
+	display: inline-block; /* Für Anstand */
+	width: 1em; 
+	margin-left: -1em; 
+	margin-top: 1em;
+
+}
+
+
+	/*Anfang der Flexbox; Elemente werden zunächst zentriert*/
+
+.box {
+			height: 100%;
+			max-width: 100%;
+			display: flex; 
+			flex-wrap: wrap;
+			justify-content:center;
+			padding-top: 4em;
+}
+
+
+		/*Beschränkung der Weite*/
+	 .secondBox, .thirdBox{
+		max-width: 50%;
+	}
+	
+	/*Bearbeitung der einzelnen Boxen
+		- linksgebundener Text*/
+
+	.firstBox{
+		order: 3;
+		text-align: left;
+	}
+
+	/*Die zweite Box ist ein in sich geschachtelte Flexbox, um die Bilder leicht zu zentrieren*/
+	
+	.secondBox{
+		flex-shrink: 1;
+		order: 2;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	#lb1Image{
+		position: absolute;
+	}
+
+
+	/* CSS für verschiedene Produktbilder*/
+	#lb1Image{
+		position:absolute;
+	}
+
+	#RGBImage{
+		position:absolute;
+		margin-top: 5%;
+	}
+	
+	
+	/*responsive Anpassung der dritten Box*/
+	.thirdBox{
+		order: 1;
+		align-self: flex-start;
+	}
+
+	/*abgerundeter, gelber Kaufbutton*/
+
+	#kaufButton{
+		background-color: var(--color-yellow);
+		border-style: none;
+		color: black;
+		font-size: 1em;
+		font-weight: bold;
+		border-radius: 1em;
+		padding: 0.6em;
+		padding-left: 1em;
+		margin-left: 2em;
+	}
+	
+	/*header*/
+	
+	header {
+		position: relative;
+		overflow-y: visible;
+	}
+	/*Navigation wird positioniert*/
+	nav.mainnav {
+		background-color: #FFFF00;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 90px;
+		position:relative;
+		z-index: 2;
+	}
+	#wrapper{
+		position: absolute;
+		width: calc(100% - 330px);
+		display: flex;
+		align-content: center;
+		padding-left: 0px;
+		height: 100%;
+		left: 330px;
+	}
+	/*Bild für mobile Menü versteckt*/
+	#wrapper img{
+		display: none;
+	}
+	nav.mainnav ul{
+		position: absolute;
+		list-style-type: none;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		color: #000000;
+		padding-left: 0px;
+	}
+	/*Links*/
+	nav.mainnav li{
+		margin: 0.5em;
+		font-size: 26px;
+	}
+	nav.mainnav li:hover, button:hover{
+		text-decoration: underline;
+	}
+	/*Logopositionierung*/
+	figure.logo{
+		top: 0px;
+		margin: 0px;
+		margin-left: 8px;
+		height: 70px;
+		background-color: #FFFF00;
+	}
+	/*Kanten werden transformiert*/
+	header div.kantenwrapper {
+		background-color: #FFFF00;
+		position: relative;
+		overflow-x: clip;
+		max-width: 100%;
+	}
+	header #kante1 {
+		position: absolute;
+		transform: rotate(5deg);
+		width: 600px;
+		height: 100px;
+		top: -72px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+	header #kante2 {
+		position: absolute;
+		transform: rotate(-10deg);
+		width: 600px;
+		height: 100px;
+		top: -97.5px;
+		left: 581px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+	header #kante3 {
+		position: absolute;
+		transform: rotate(3deg);
+		width: 1500px;
+		height: 100px;
+		left: 879px;
+		top: -57px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+
+
+	

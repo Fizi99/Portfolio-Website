@@ -1,0 +1,270 @@
+	/*AUTHOR ANTON FRIEDRICH FITZENREITER*/
+	
+	/*Hintergrundfarbe*/
+
+	html {
+		font-family: Arial;
+		font-size: 16 px;
+		background: radial-gradient(#13293d, #000000 );
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	body {
+		margin: 0px;
+		overflow-x: hidden;
+	}
+	a {
+		text-decoration: none;
+		color: #000000;
+	}
+	
+	/*header*/
+	
+	header {
+		position: relative;
+		overflow-y: visible;
+	}
+	/*Navigation wird positioniert*/
+	nav.mainnav {
+		background-color: #FFFF00;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 90px;
+		position:relative;
+		z-index: 2;
+	}
+	#wrapper{
+		position: absolute;
+		width: calc(100% - 330px);
+		display: flex;
+		align-content: center;
+		padding-left: 0px;
+		height: 100%;
+		left: 330px;
+	}
+	/*Bild für mobile Menü versteckt*/
+	#wrapper img{
+		display: none;
+	}
+	nav.mainnav ul{
+		position: absolute;
+		list-style-type: none;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		color: #000000;
+		padding-left: 0px;
+	}
+	/*Links*/
+	nav.mainnav li{
+		margin: 0.5em;
+		font-size: 26px;
+	}
+	nav.mainnav li:hover{
+		text-decoration: underline;
+	}
+	/*Logopositionierung*/
+	figure.logo{
+		top: 0px;
+		margin: 0px;
+		margin-left: 8px;
+		height: 70px;
+		background-color: #FFFF00;
+	}
+	/*Kanten werden transformiert*/
+	header div.kantenwrapper {
+		background-color: #FFFF00;
+		position: relative;
+		overflow-x: clip;
+		max-width: 100%;
+	}
+	header #kante1 {
+		position: absolute;
+		transform: rotate(5deg);
+		width: 600px;
+		height: 100px;
+		top: -72px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+	header #kante2 {
+		position: absolute;
+		transform: rotate(-10deg);
+		width: 600px;
+		height: 100px;
+		top: -97.5px;
+		left: 581px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+	header #kante3 {
+		position: absolute;
+		transform: rotate(3deg);
+		width: 1500px;
+		height: 100px;
+		left: 879px;
+		top: -57px;
+		background-color:#FFFF00;
+		z-index: 1;
+	}
+	/*Hauptbild wird positioniert*/
+	figure.mainpic {
+		padding: 0;
+		margin: 0 auto;
+	}
+	img.mainpic {
+		top: 50px;
+		display: block;
+		margin: 0 auto;
+		max-height: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	/*main page*/
+	
+	main {
+		position: relative;
+		margin-bottom: 250px;
+	}
+	/*Grafik für Mobile Ansicht wird versteckt*/
+	#imgmobile{
+		display: none;
+	}
+	/*Grafik für den ersten Artikel wird positioniert*/
+	main article.article1 #klecks1 {
+		width: 100%;
+		height: 1000px;
+		position: absolute;
+		top: -400px;
+		margin: auto;
+		left: -100px;
+	}
+	/*Text für ersten Artikel wird positioniert*/
+	main article.article1 h1 {
+		font-family: Ethnocentric;
+		z-index: 2;
+		position: relative;
+		margin: auto;
+		margin-left: 33%;
+	}
+	main article.article1 p {
+		z-index: 2;
+		position: relative;
+		width: 30%;
+		margin-left: 33%;
+	}
+	/*Bild wird positioniert*/
+	main #img2 {
+		position: relative;
+		z-index: 2;
+		width: 70%;
+		height: auto;
+		margin-left: 10%;
+	}
+	/*Grafik für den zweiten Artikel wird positioniert*/
+	main article.article2 #klecks2 {
+		width: 100%;
+		height: 750px;
+		position: absolute;
+		top: 340px;
+		margin: auto;
+	}
+	/*Text für zweiten Artikel wird positioniert*/
+	main article.article2 h1 {
+		font-family: Ethnocentric;
+		z-index: 2;
+		position: relative;
+		margin: auto;
+		margin-left: 33%;
+	}
+	main article.article2 p {
+		z-index: 2;
+		position: relative;
+		width: 30%;
+		margin-left: 33%;
+	}
+	/*Navigation für Kategorieseiten wird positioniert*/
+	main #navmain {
+		position: relative;
+		top: 250px;
+	}
+	main nav #list {
+		display: flex;
+		position: relative;
+		width: 100%;
+		flex-wrap: wrap;
+		margin-left: 40px;
+	}
+	main nav #list li{
+		position: relative;
+		width: 40%;
+		list-style-type: none;
+	}
+	main nav #list li img{
+		max-width: 100%;
+		height: auto;
+	}
+	main nav #list li a{
+		position: absolute;
+		top: 45%;
+		text-align: center;
+		font-size: 26px;
+		font-family: Ethnocentric;
+	}
+	#neu {
+		left: 49%;
+	}
+	#sale {
+		left: 48%;
+	}
+	#boards {
+		left: 43%;
+	}
+	#ausrüstung {
+		left: 34%;
+	}
+	
+	/*footer*/
+	
+	footer {
+		position: relative;
+		display: grid;
+		justify-content: center;
+	}
+	/*Impressum wird positioniert*/
+	footer h1 {
+		position: relative;
+		font-family: Ethnocentric;
+		color: #FFFF00;
+		text-align: center;
+	}
+	footer p {
+		position: relative;
+		color: #FFFF00;
+		text-align: center;
+	}
+	/*Karte wird positioniert*/
+	footer iframe {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*Socialmedia Links werden positioniert*/
+	footer nav {
+		position: relative;
+	}
+	footer ul {
+		display: flex;
+		justify-content: space-evenly;
+		list-style-type: none;
+	}
+	footer li {
+		position: relative;
+		text-align: center;
+	}
+	footer li a{
+		color: #FFFF00;
+	}

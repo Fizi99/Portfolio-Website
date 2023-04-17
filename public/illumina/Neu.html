@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<!--AUTHOR ANTON FRIEDRICH FITZENREITER-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> Illumina </title>
+
+        <!--laden der Schriften-->
+		<style>
+			@font-face { 
+			font-family: Ethnocentric;
+			src: url('resources/font/ETHNOCENTRIC.TTF');
+			}
+		</style>
+        <!--Stylesheets werden nach mediaqueries geladen, Javascript wird geladen-->
+		<link rel="stylesheet" media="screen and (min-width: 1160px)" href="resources/CSS/Kategorie_D.css" />
+		<link rel="stylesheet" media="screen and (min-width: 550px) and (max-width: 1160px)" href="resources/CSS/Kategorie_T.css" />
+		<link rel="stylesheet" media="screen and (max-width: 550px)" href="resources/CSS/Kategorie_M.css" />
+		<script src="resources/javascript/navigation.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--Navigationsleiste wird erstellt-->
+			<nav class="mainnav">
+				<!--Logo mit Link zur Hauptseite wird platziert-->
+				<a href="Main.html">
+					<figure class="logo">
+						<img src="resources/pictures/Logo.svg" alt="Logo" width="300" height="75">
+					</figure>
+				</a>
+				<div id="wrapper">
+					<!--Menügrafik für Mobile Ansicht-->
+					<img src="resources/pictures/Menu.svg" alt="Menu" width="50" height="50">
+				<!--Liste mit den Navigationselementen-->
+					<ul id="changeontap">
+						<li>
+							<a href="Neu.html">
+								Neu
+							</a>
+						</li>
+						<li>
+							<a href="Sale.html">
+								Sale
+							</a>
+						</li>
+						<li>
+							<a href="Boards.html">
+								Boards
+							</a>
+						</li>
+						<li>
+							<a href="Ausrüstung.html">
+								Ausrüstung
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--Unsichtbarer Knopf zum ausklappen des Menüs im Mobilen Modus-->
+				<div id="button"></div>
+			</nav>
+            <!--Balken für Navigationsleiste-->
+			<div class="kantenwrapper">
+				<div id="kante1">
+				</div>
+			</div>
+			<div class="kantenwrapper">
+				<div id="kante2">
+				</div>
+			</div>
+			<div class="kantenwrapper">
+				<div id="kante3">
+				</div>
+			</div>
+            <!--großes Hauptbild-->
+			<figure class="mainpic">
+				<img class="mainpic" src="resources/pictures/Neu-picture-1.png" alt="Neu">
+			</figure>
+		</header>
+        <main>
+            <!--Kategorienüberschrift und Grafik-->
+            <article class="article1">
+				<figure>
+					<img id="klecks1" src="resources/pictures/MP-klecks.svg" alt="Klecks" width="105" height="103">
+                    <h1>
+                        Neu
+                    </h1>
+				</figure>
+			</article>
+            <!--Produktliste-->
+            <div class="productContainer">
+                <ul>
+                    <li>
+						<!--Link zur Artikelseite-->
+						<a href="Artikel2.html">
+							<figure>
+								<img src="resources/pictures/Produkt_2.png" alt="Produkt Bild" width="1941" height="2169">
+							</figure>
+							<div class="textwrapper">
+								<!--Produktname-->
+								<h1>
+									Red Doggo
+								</h1>
+								<!--Produktbeschreibung-->
+								<p>
+									Agressivität, Spaß und Competitive Vibes. Der Red Doggo überzeugt mit seinem scharfen Design, stylischen Griptape und seinen vorinstallierten, brennend hellen RGB-Wires. Auf diesem Downhill Board erreichst du auch bei Dunkelheit Höchstgeschwindigkeiten.
+								</p>
+								<!--Produktpreis-->
+								<p class="price">
+									299.99 €
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+            </div>
+        </main>
+        <footer>
+			<!--Impressum-->
+			<h1>
+				Impressum
+			</h1>
+			<p>
+				Da wir keinen eigenen Standort haben ist hier als Platzhalter die Adresse der Hochschule gegeben.
+			</p>
+			<!--Einbettung der Googlemaps Seite der Hochschule-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8322.504404996705!2d8.360260749203276!3d51.67273641611387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9fa6432b2e62a8a!2sHochschule%20Hamm-Lippstadt%20-%20Campus%20Lippstadt!5e0!3m2!1sde!2sde!4v1610985187321!5m2!1sde!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			</iframe>
+			<!--Liste mit Socialmedia Links-->
+			<nav>
+				<ul>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/FacebookLogo.png" alt="facebook" width="40" height="40">
+						</figure>
+						<a href="https://de-de.facebook.com/Hochschule.Hamm.Lippstadt/">
+							Facebook
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/TwitterLogo.png" alt="Twitter" width="40" height="40">
+						</figure>
+						<a href="https://twitter.com/hshammlippstadt?lang=de">
+							Twitter
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/YoutubeLogo.png" alt="Youtube" width="40" height="40">
+						</figure>
+						<a href="https://www.youtube.com/user/hshammlippstadt">
+							Youtube
+						</a>
+					</li>
+					<li>
+						<figure>
+							<img class="icon" src="resources/pictures/InstagramLogo.png" alt="Instagram" width="40" height="40">
+						</figure>
+						<a href="https://www.instagram.com/hshammlippstadt/?hl=de">
+							Instagram
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Adresse-->
+			<p id="adress">
+				Dr.-Arnold-Hueck-Straße 3<br> 
+				59557<br>
+				Lippstadt
+			</p>
+		</footer>
+    </body>
+</html>

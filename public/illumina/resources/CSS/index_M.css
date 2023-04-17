@@ -1,0 +1,299 @@
+/*AUTHOR ANTON FRIEDRICH FITZENREITER*/
+
+/*Hintergrundfarbe*/
+
+html {
+    font-family: Arial;
+    font-size: 12px;
+    background: radial-gradient(#13293d, #000000 );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+/*header*/
+
+header {
+    position: relative;
+    overflow-y: visible;
+}
+/*Navigation wird positioniert*/
+nav.mainnav {
+    background-color: #FFFF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position:relative;
+    z-index: 2;
+}
+/*Menü für Mobile Ansicht wird positioniert*/
+#wrapper{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    padding-left: 0px;
+    right: 15px;
+    background-color: #FFFF00;
+}
+/*Unsichtbarer Knopf zum klappen der Navigation*/
+#button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    padding-left: 0px;
+    right: 15px;
+    z-index: 2;
+    pointer-events: all;
+}
+#wrapper img{
+    z-index: 1;
+}
+/*Ausfahren der Navigation bei hover über Menü*/
+nav.mainnav ul{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    color: #000000;
+    padding-right: 70px;
+    text-align: right;
+    right: -15px;
+    top: -17px;
+    background-color: #FFFF00;
+}
+nav.mainnav li{
+    margin: 1em;
+}
+nav.mainnav li:hover{
+    text-decoration: underline;
+}
+/*Logopositionierung*/
+figure.logo{
+    top: 0px;
+    margin: 0px;
+    margin-left: 8px;
+    background-color: #FFFF00;
+}
+figure.logo img{
+    width: 150px;
+    z-index: 1;
+    position: relative;
+}
+/*Kanten werden transformiert*/
+header div.kantenwrapper {
+    background-color: #FFFF00;
+    position: relative;
+    overflow-x: clip;
+    max-width: 100%;
+}
+header #kante1 {
+    position: absolute;
+    transform: rotate(5deg);
+    width: 600px;
+    height: 100px;
+    top: -72px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+header #kante2 {
+    position: absolute;
+    transform: rotate(-10deg);
+    width: 600px;
+    height: 100px;
+    top: -97.5px;
+    left: 581px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+header #kante3 {
+    position: absolute;
+    transform: rotate(3deg);
+    width: 1500px;
+    height: 100px;
+    left: 879px;
+    top: -57px;
+    background-color:#FFFF00;
+    z-index: 1;
+}
+/*Hauptbild wird positioniert*/
+figure.mainpic {
+    padding: 0;
+    margin: 0 auto;
+}
+img.mainpic {
+    top: 50px;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/*main page*/
+
+main {
+    position: relative;
+    margin-bottom: 250px;
+}
+/*Grafik für Mobile Ansicht positioniert und Grafik für Desktop Ansicht versteckt*/
+#imgmobile{
+    position: absolute;
+    top: 150px;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+}
+main article.article1 #klecks1 {
+    display: none;
+}
+/*Text für ersten Artikel wird positioniert*/
+main article.article1 {
+    text-align: center;
+}
+main article.article1 h1 {
+    font-family: Ethnocentric;
+    z-index: 2;
+    position: relative;
+    margin: auto;
+}
+main article.article1 p {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+/*Bild wird positioniert*/
+main #img2 {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+/*Grafik für Desktop Ansicht wird versteckt*/
+main article.article2 #klecks2 {
+    display: none;
+}
+/*Text für zweiten Artikel wird positioniert*/
+main article.article2 {
+    text-align: center;
+}
+main article.article2 h1 {
+    font-family: Ethnocentric;
+    z-index: 2;
+    position: relative;
+    margin: auto;
+}
+main article.article2 p {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+/*Navigation für Kategorieseiten wird positioniert*/
+main #navmain {
+    position: relative;
+    top: 150px;
+}
+main nav #list {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+main nav #list li{
+    position: relative;
+    width: 70%;
+    list-style-type: none;
+}
+main nav #list li img{
+    max-width: 100%;
+    height: auto;
+}
+main nav #list li a{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    font-family: Ethnocentric;
+    font-size: 3.5vw;
+}
+#neu {
+    left: 49%;
+}
+#sale {
+    left: 46%;
+}
+#boards {
+    left: 42%;
+}
+#ausrüstung {
+    left: 32%;
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Impressum wird positioniert*/
+footer h1 {
+    position: relative;
+    font-family: Ethnocentric;
+    color: #FFFF00;
+    text-align: center;
+}
+footer p {
+    position: relative;
+    color: #FFFF00;
+    text-align: center;
+}
+/*Karte wird positioniert*/
+footer iframe {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    width: 60%;
+    height: 250px;  
+}
+/*Socialmedia Links werden positioniert*/
+footer nav {
+    position: relative;
+    width: 100%;
+}
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+}
+footer li {
+    position: relative;
+    text-align: center;
+}
+footer li a{
+    color: #FFFF00;
+    font-size: 12px;
+}
+footer li figure {
+    margin: 0px;
+}
+footer img.icon {
+    height: 30px;
+    width: 30px;
+}

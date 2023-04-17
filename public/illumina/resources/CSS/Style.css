@@ -1,0 +1,167 @@
+/*AUTHOR MUNIR ALI*/
+
+/*Hintergrund*/
+body{
+  background: radial-gradient(#13293d, #000000 );
+  }
+
+  /*felxbox Grundstruktur*/
+  .flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; 
+  }
+
+  .flex div{
+     padding: 10px;
+     min-width: 200px;
+     max-width: 500px;
+     min-height: 50px;
+     flex-shrink: 0;
+     flex-grow: 1;
+     flex-basis: 0;
+     /*Abstand nach oben für VIsuellen Abstand*/
+     transform: translateY(20%);
+   }
+
+
+   /*Anpassungen einzelner Felder für ein nach dem Inhalt gerichtetes Verhältnis*/
+#box3{
+  max-width: 1060px;
+  flex-grow: 2.115;
+}
+
+#box5{
+  flex-grow: 1;
+  flex-shrink: 3;
+  min-width: 120px;
+}
+
+#box6{
+  flex-grow:2;
+}
+
+#box7{
+  flex-grow: 1;
+  flex-shrink: 3;
+  min-width: 120px;
+}
+
+/*label Design*/
+label{
+display: inline-block;
+font-size: 20px;
+color:rgb(255, 255, 0);
+padding-bottom: 0.25rem;
+}
+
+input,textarea{
+  display:block;
+  width: 97%;
+  font-size: 18px;
+  color:rgb(255, 255, 0);
+ background-color: transparent;
+ padding:0.151rem;
+ border-radius: 5px;
+ border-color: #13293d;
+ border: 2.5px solid #18334d;
+}
+
+/*Platzierung des Textes über dem Bild*/
+#p0{
+  color:  #18334d;
+  position: relative;
+  z-index: 1;
+
+  transform: translateY(-940%);
+}
+
+
+#c{
+  display:flex;
+  color: #ff0;
+ justify-content: center;
+ flex-wrap:wrap;
+
+ transform: translateY(130%);
+}
+
+#c0{
+  width: 10px;
+}
+
+/*Platzierung des Knopfes*/
+#kaufen{
+  vertical-align: center;
+  height: autp; width: 200px;
+  
+  background-color: Transparent;
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+  }
+  
+  .container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(50px);
+  }
+  
+  /*Platzierung der SVG*/
+  #img0{
+    display: flex;
+    position: relative;
+    vertical-align: center;
+  }
+  
+/*Einkauf.html*/
+#adre{
+  color: #ff0;
+  
+}
+
+/* abgerundete Box*/
+#main{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15%;
+  margin-bottom: 40%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  border: #ff0 2px solid;
+  border-radius: 5rem;
+}
+
+p{
+  color: #ff0;
+}
+
+/*Titel*/
+#gru{
+  font-family:  Ethnocentric;
+  size: 1.5vw;
+  color: #ff0;
+  text-align: center;
+}
+/*linktext*/
+#back{
+  font-family:  Ethnocentric;
+  font-size:1.5vw;
+  text-align: center;
+}
+
+/*link Visualisierung*/
+#back:hover{
+  
+  font-family:  Ethnocentric;
+  text-decoration: underline;
+}

@@ -84,4 +84,19 @@
     "previewImage": "./assets/images/projects/Soulfood/Soulfood_Preview.jpg",
     "_3DText": "./assets/models/Soulfood_Text.glb",
     "model": "./assets/models/Island_V2.glb"
+},
+{
+    "id": "SushiRush",
+    "title": "Sushi Rush",
+    "text": "Dieses Projekt entstand in einem Augmented Reality Modul. Es handelt sich um ein kleines AR Tower Defense Spiel, bei dem man durch Platzieren von Türmen verhindern muss, dass die Sushimonster die letzte Flagge erreichen. Je nach Ort kann die Größe der Spielobjekte eingestellt werden. So kann das Spiel gemütlich am eigenen Esstisch als auch auf einem großen Platz gespielt werden.<br><br>Werkzeuge: Unity, Blender<br>Teammitglieder: Janis Karl, Munir Ali",
+    "media": 1,
+    "images": [ {"alt": "SushiRush_Title", "path": "./assets/images/projects/SushiRush/SushiRush_Title.jpg"},
+                {"alt": "SushiRush_Gameplay", "path": "./assets/images/projects/SushiRush/SushiRush_Gameplay.jpg"}
+    ],
+    "link": 1,
+    "href": "https://drive.google.com/file/d/1rwOPN5VHcrtsNbQ23RxlCtYnlbhj8CY4/view?usp=sharing",
+    "linkText": "Hier herunterladen!",
+    "previewImage": "./assets/images/projects/SushiRush/SushiRush_Preview.jpg",
+    "_3DText": "./assets/models/SushiRush_Text.glb",
+    "model": "./assets/models/Island_V4.glb"
 }]
